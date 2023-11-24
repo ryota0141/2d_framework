@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>トップページ</title>
+<style>
+body {
+	text-align: center;
+}
+
+header {
+	text-align: center;
+}
+
+.recent-posts {
+	text-align: center;
+	margin-top: 20px; /* 間隔を追加 */
+}
+
+.post-list {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap; /* flexボックスの折り返しを有効にする */
+}
+
+.post {
+	text-align: center;
+	margin: 10px;
+}
+</style>
+</head>
+<body>
+	<header>
+		<h1>食事</h1>
+		<a href="/genre" id="back-to-genre" style="float: left;">ジャンルに戻る</a>
+	</header>
+
+	<main
+		style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
+		<section class="content-section" style="text-align: center;">
+			<button>ジャンル</button>
+			<!-- 他のジャンルボタンを追加 -->
+		</section>
+		<section class="content-section" style="text-align: center;">
+			<button>タグ</button>
+			<!-- 他のタグボタンを追加 -->
+		</section>
+		<section class="content-section" style="text-align: center;">
+			<button>タイトル</button>
+			<!-- 他のタイトルボタンを追加 -->
+		</section>
+		<section class="content-section" style="text-align: center;">
+			<button>人気</button>
+			<!-- 他の人気ボタンを追加 -->
+		</section>
+	</main>
+
+	<!-- 最近の投稿 -->
+	<div class="recent-posts">
+		<div class="post-list">
+			<!-- 投稿のリストを表示 -->
+			<div class="post">
+				<p>アニメ</p>
+				<img alt="Post Image 1"
+					src="https://3.bp.blogspot.com/-kHda-2huAF8/WUdZKshMQkI/AAAAAAABFDM/sXt-PT9dKtYp2Y0Y_OV64TJzs7PvOLZmgCLcBGAs/s180-c/tv_boy_chikaku.png"
+					style="width: 250px; height: 250px;">
+			</div>
+			<div class="post">
+				<p>ゲーム</p>
+				<img alt="Post Image 1"
+					src="https://4.bp.blogspot.com/-DeU_6I8CFOA/UUFxvbV2TUI/AAAAAAAAO0U/WfgogfFs5sw/s180-c/portable_game.png"
+					style="width: 250px; height: 250px;">
+
+			</div>
+			<div class="post">
+				<p>漫画</p>
+				<img alt="Post Image 1"
+					src="https://1.bp.blogspot.com/-CbP8p3DSIn0/UchCDw9ebKI/AAAAAAAAVJg/b3woYTn2mVg/s180-c/manga.png"
+					style="width: 250px; height: 250px;">
+
+			</div>
+			<div class="post">
+				<p>食事</p>
+				<img alt="Post Image 1"
+					src="https://1.bp.blogspot.com/-DRdIFx5u7Rk/XVKfn_f43pI/AAAAAAABUDI/53tDXLqaDM4MEihuLeb9RmBeCY5dHBu4QCLcBGAs/s180-c/building_food_family_restaurant.png"
+					style="width: 250px; height: 250px;">
+
+			</div>
+			<div class="post">
+				<p>趣味</p>
+				<img alt="Post Image 1"
+					src="https://2.bp.blogspot.com/-uDHcB6ADo7A/U9zB2bVjoII/AAAAAAAAjow/0aBxCVoN1J4/s180-c/nichiyoudaiku.png"
+					style="width: 250px; height: 250px;">
+
+			</div>
+			<div class="post">
+				<p>スポーツ</p>
+				<img alt="Post Image 1"
+					src="https://1.bp.blogspot.com/-lvw1G3Gdd1U/Xa0luN0dtEI/AAAAAAABVnw/lZuzyKN5A34zyf39byI_ZxSXI22SdBOLACNcBGAsYHQ/s180-c/syukujitsu15_sports_nohi.png"
+					style="width: 250px; height: 250px;">
+
+			</div>
+			<!-- 他の投稿も同様に繰り返す -->
+		</div>
+	</div>
+	<footer style="text-align: center;">
+		<p>&copy; 2023 オススメ紹介WEB</p>
+	</footer>
+</body>

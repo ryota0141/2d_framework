@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>投稿ページ</title>
+    <style>
+        /* スタイリング用のCSSをここに追加 */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            margin: 0; /* ページのマージンをリセット */
+        }
+
+        #header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #1DA1F2;
+            padding: 10px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        #header a {
+            text-decoration: none;
+            color: #fff;
+            margin: 10px;
+        }
+
+        #content {
+            padding: 20px;
+        }
+
+        #back-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 戻るボタン -->
+    <a href="/mypage" id="back-button">戻る</a>
+
+    <div id="content">
+        <h1>投稿ページ</h1>
+
+        <form action="process_post.php" method="post" enctype="multipart/form-data">
+            <label for="title">タイトル入力エリア:</label>
+            <input type="text" id="title" name="title" required><br><br>
+
+            <label for="genre">ジャンル別プルダウンメニュー:</label>
+            <select id="genre" name="genre">
+                <option value="genre1">ジャンル1</option>
+                <option value="genre2">ジャンル2</option>
+                <option value="genre3">ジャンル3</option>
+            </select><br><br>
+
+            <label for="tags">タグプルダウンメニュー:</label>
+            <select id="tags" name="tags">
+                <option value="tag1">タグ1</option>
+                <option value="tag2">タグ2</option>
+                <option value="tag3">タグ3</option>
+            </select><br><br>
+
+            <label for="customTags">タグ入力エリア:</label>
+            <input type="text" id="customTags" name="customTags"><br><br>
+
+            <label for="content">本文入力エリア:</label>
+            <textarea id="content" name="content" rows="4" required></textarea><br><br>
+
+            <label for="image">画像アップロードボタン:</label>
+            <input type="file" id="image" name="image" accept="image/*"><br><br>
+
+            <input type="submit" value="投稿する">
+        </form>
+    </div>
+</body>
+</html>
