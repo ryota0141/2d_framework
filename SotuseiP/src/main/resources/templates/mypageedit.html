@@ -1,88 +1,85 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>プロフィール編集</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #F0F0F0;
-        }
-
-        header {
-            background-color: #1DA1F2;
-            color: #fff;
-            padding: 10px;
-            text-align: center; /* テキストを中央に配置 */
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 24px;
-        }
-
-        .profile-container {
-            background-color: #fff;
-            margin: 10px;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        #header-image {
-            max-width: 100%;
-            height: auto;
-        }
-
-        #user-icon {
-            max-width: 100px;
-            max-height: 100px;
-        }
-
-        #edit-header {
-            border: none;
-            border-bottom: 1px solid #ccc;
-        }
-
-        #edit-comment {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-    </style>
+ <meta charset="UTF-8">
+ <title>プロフィール編集</title>
+ <style>
+ body {
+ font-family: Arial, sans-serif;
+ margin: 0;
+ padding: 0;
+ background-color: #F0F0F0;
+}
+ header {
+ background-color: #1DA1F2;
+   color: #fff;
+ padding: 10px;
+   text-align: center; /* テキストを中央に配置 */
+}
+ header h1 {
+ margin: 0;
+ font-size: 24px;
+}
+ .profile-container {
+ background-color: #fff;
+ margin: 10px;
+ padding: 20px;
+ border: 1px solid #ccc;
+ border-radius: 5px;
+}
+ #header-image {
+ max-width: 100%;
+ height: auto;
+}
+ #user-icon {
+ max-width: 100px;
+ max-height: 100px;
+}
+ #edit-header {
+ border: none;
+ border-bottom: 1px solid #ccc;
+}
+ #edit-comment {
+ width: 100%;
+ padding: 10px;
+ border: 1px solid #ccc;
+ border-radius: 5px;
+}
+ </style>
 </head>
 <body>
-<header>
-    <h1>プロフィールを編集</h1>
-</header>
-<div class="profile-container">
-    <h2>あなたのプロフィール</h2>
-    <label for="header-image">ヘッダー画像:</label>
-    <img id="header-image" src="default-header.jpg" alt="ヘッター">
-    <input type="file" id="header-image-upload" accept="image/*"><br><br>
-    <label for="user-icon">アイコン画像:</label>
-    <img id="user-icon" src="default-icon.png" alt="アイコン">
-    <input type="file" id="user-icon-upload" accept="image/*"><br><br>
-    <label for="edit-comment">一言コメント:</label>
-    <textarea id="edit-comment" rows="4">自己紹介の一言コメントを入力してください.</textarea>
-</div>
-<div style="position: fixed; bottom: 10px; right: 10px;">
+ <header>
+ <h1>プロフィールを編集</h1>
+ </header>
+ <div class="profile-container">
+ <h2>あなたのプロフィール</h2>
+  <label for="username">ユーザー名:</label>
+   <input type="text" id="username" placeholder="ユーザー名を入力"><br><br>
+ <label for="header-image">ヘッダー画像:</label>
+ <img id="header-image" src="default-header.jpg" alt="ヘッター">
+ <input type="file" id="header-image-upload" accept="image/*"><br><br>
+ <label for="user-icon">アイコン画像:</label>
+ <img id="user-icon" src="default-icon.png" alt="アイコン">
+ <input type="file" id="user-icon-upload" accept="image/*"><br><br>
+ <label for="edit-comment">一言コメント:</label>
+ <textarea id="edit-comment" rows="4">自己紹介の一言コメントを入力してください.</textarea>
+ </div>
+ <div style="position: fixed; bottom: 10px; right: 10px;">
     <form onsubmit="return onSaveClick()">
-        <input type="submit" value="保存">
-    </form>
-</div>
-<div style="position: fixed; top: 10px; left: 10px;">
-    <a href="/mypage" id="back-button">戻る</a>
-</div>
+    <input type="submit" value="保存">
+   </form>
+ </div>
+ <div style="position: fixed; top: 10px; left: 10px;">
+   <a href="/mypage" id="back-button" >戻る</a>
+ </div>
 
-<script>
-    function onSaveClick() {
-        alert("保存しました");
-        return true; // フォームを送信
-    }
-</script>
+  <script>
+   function onSaveClick() {
+     // Assuming you have logic here to handle the form submission
+     // For demonstration purposes, we'll just display an alert
+     alert("保存しました");
+     return true; // Allow the form to be submitted
+   }
+ </script>
 </body>
 </html>
